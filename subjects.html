@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Study Notes | Virtual Study App</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+background:#2c3e50;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+.nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.btn-login{
+background:#e74c3c;
+padding:6px 14px;
+border-radius:4px;
+}
+
+/* HERO */
+.notes-hero{
+background:linear-gradient(to right,#3498db,#6dd5fa);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.notes-hero h1{
+font-size:40px;
+}
+
+.notes-hero p{
+margin-top:10px;
+font-size:16px;
+}
+
+/* SUBJECTS SECTION */
+
+.subject-section{
+padding:40px 60px;
+background:#f4f6f9;
+}
+
+.subject-section h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.subject-list{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.subject-list span{
+background:#3498db;
+color:white;
+padding:10px 18px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* NOTES SECTION */
+
+.notes-section{
+padding:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.notes-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.notes-card:hover{
+transform:translateY(-8px);
+}
+
+.notes-card h3{
+margin-bottom:10px;
+}
+
+.notes-card p{
+font-size:14px;
+margin-bottom:20px;
+}
+
+.notes-card button{
+padding:10px 20px;
+border:none;
+background:#3498db;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.notes-card button:hover{
+background:#2c80b4;
+}
+
+/* FOOTER */
+
+.footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<div class="logo">VirtualStudy</div>
+
+<nav class="nav">
+<a href="./dashboard.html">Home</a>
+<a href="#">Subjects</a>
+<a href="timer.html">Study Timer</a>
+<a href="notes.html">Notes</a>
+<a href="index.html" class="btn-login">Logout</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="notes-hero">
+<h1>Study Notes</h1>
+<p>Simple, clear & exam-oriented notes for students</p>
+</section>
+
+<!-- SUBJECTS -->
+<section class="subject-section">
+
+<h2>Available Subjects</h2>
+
+<div class="subject-list">
+<span>Mathematics</span>
+<span>Computer Science</span>
+<span>Physics</span>
+<span>Chemistry</span>
+<span>English</span>
+<span>Social Science</span>
+</div>
+
+</section>
+
+<!-- NOTES -->
+<section class="notes-section">
+
+<div class="notes-card">
+<h3>📐 Mathematics</h3>
+<p>Algebra, Geometry, Trigonometry basic notes.</p>
+<button>View Notes</button>
+</div>
+
+<div class="notes-card">
+<h3>💻 Computer Science</h3>
+<p>HTML, CSS, JavaScript & Java basics.</p>
+<button>View Notes</button>
+</div>
+
+<div class="notes-card">
+<h3>⚛ Physics</h3>
+<p>Motion, Laws, Electricity & Magnetism.</p>
+<button>View Notes</button>
+</div>
+
+<div class="notes-card">
+<h3>🧪 Chemistry</h3>
+<p>Atoms, Molecules, Reactions & Acids.</p>
+<button>View Notes</button>
+</div>
+
+<div class="notes-card">
+<h3>📚 English</h3>
+<p>Grammar rules, essays & literature notes.</p>
+<button>View Notes</button>
+</div>
+
+<div class="notes-card">
+<h3>🌍 Social Science</h3>
+<p>History, Civics & Geography basics.</p>
+<button>View Notes</button>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<p>© 2026 Virtual Study App | College Project</p>
+</footer>
+
+</body>
+</html>
